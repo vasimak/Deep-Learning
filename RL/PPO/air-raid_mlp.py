@@ -95,3 +95,10 @@ if __name__ == "__main__":
 
     # Save the GIF
     imageio.mimsave("air-raid_mlp_original.gif", [np.array(img) for i, img in enumerate(images) if i % 2 == 0], duration=300)
+# # Trained agent
+# obs = env.reset()
+# for i in range(100):
+#     action, _states = model.predict(obs, deterministic=True)
+#     obs, rewards, dones, info = env.step(action)
+#     
+#     env.render("human")

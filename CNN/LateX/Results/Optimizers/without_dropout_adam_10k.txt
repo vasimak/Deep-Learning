@@ -1,0 +1,5 @@
+Epoch 0 took 630.75 seconds, training loss: 2.303, training accuracy: 0.100, test loss: 2.303, test accuracy: 0.100, optimizer: 9.090991736288513e-05
+Epoch 10 took 835.88 seconds, training loss: 2.303, training accuracy: 0.100, test loss: 2.303, test accuracy: 0.100, optimizer: 4.7619274377497033e-05
+Epoch 20 took 834.81 seconds, training loss: 2.303, training accuracy: 0.100, test loss: 2.303, test accuracy: 0.100, optimizer: 3.225816857473734e-05
+Epoch 30 took 837.50 seconds, training loss: 2.303, training accuracy: 0.100, test loss: 2.303, test accuracy: 0.100, optimizer: 2.439030339098388e-05
+Epoch 40 took 834.87 seconds, training loss: 2.303, training accuracy: 0.100, test loss: 2.303, test accuracy: 0.100, optimizer: 1.960788158408154e-05

@@ -1,0 +1,31 @@
+200K steps
+enviroments = 8
+CUSTOM CNNPOLICY=self.cnn = nn.Sequential(
+                nn.Conv2d(n_input_channels, 128, kernel_size=4, stride=1, padding=0),
+                nn.ReLU(),
+                nn.Conv2d(128, 64, kernel_size=4, stride=1, padding=0),
+                nn.ReLU(),
+                nn.Flatten(),
+            )
+
+            # Compute shape by doing one forward pass
+            with torch.no_grad():
+                n_flatten = self.cnn(torch.as_tensor(observation_space.sample()[None]).float()).shape[1]
+CUSTOM MLPPOLICY= policy_kwargs = dict(activation_fn=torch.nn.ReLU,
+                     net_arch=dict(pi=[128, 64,32], vf=[128, 64,32]))
+PPO
+ORIGINAL CNNPOLICY Mean Reward: 1717.5 , Std Reward: 749.5040026577576
+CUSTOM1 CNNPOLICY Mean Reward: 1607.5 Std Reward: 1004.5552498494047
+
+ORIGINAL MLPOLICY Mean Reward: 842.5 Std Reward: 508.6808921121374
+CUSTOM1 MLPPOLICY
+
+
+A2C
+ORIGINAL CNNPOLICY Mean Reward: 1437.5 Std Reward: 1112.6685265612575
+CUSTOM1 CNNPOLICY Mean Reward: 215.0 Std Reward: 131.90905958272918
+
+ORIGINAL MLPOLICYMean Reward: 495.0 Std Reward: 579.094120156646
+
+CUSTOM1 MLPPOLICY Mean Reward: 597.5 Std Reward: 633.6846613261205
+

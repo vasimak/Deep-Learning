@@ -1,0 +1,164 @@
+Simple RNN
+Epochs 100
+First train
+
+
+
+First
+adam = tf.keras.optimizers.Adam(learning_rate=10e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-7)
+with strategy.scope():
+    model = Sequential([
+        Embedding(max_words, 128),
+        SimpleRNN(128, activation="tanh"),
+        Dropout(0.4),
+        Dense(64, activation='relu'),
+        Dropout(0.3),
+        Dense(32,activation = 'relu'),
+        Dropout(0.2),
+        Dense(1, activation='sigmoid')
+    ])
+
+Second
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-4,decay=10e-6,momentum = 0.6)
+
+
+# Define the model architecture
+with strategy.scope():
+    model = Sequential([
+        Embedding(max_words, 128),
+        SimpleRNN(128, activation="tanh"),
+        Dropout(0.4),
+        Dense(64, activation='relu'),
+        Dropout(0.3),
+        Dense(32,activation = 'relu'),
+        Dropout(0.2),
+        Dense(1, activation='sigmoid')
+    ])
+third
+
+adam = tf.keras.optimizers.Adam(learning_rate=10e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-7)
+# Define the model architecture
+
+model = Sequential([
+    Embedding(max_words, 128,input_length=max_len),
+    SimpleRNN(128, activation="tanh",kernel_regularizer=regularizers.l2(0.00001)),
+    Dropout(0.4),
+    Dense(64, activation='relu',kernel_regularizer=regularizers.l2(0.00001)),
+    Dropout(0.3),
+    Dense(32,activation = 'relu',kernel_regularizer=regularizers.l2(0.00001)),
+    Dropout(0.2),
+    Dense(1, activation='sigmoid')
+])
+Fourth
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-4, decay=10e-6, momentum=0.6)
+
+model = Sequential([
+    Embedding(max_words, 128, input_length=max_len),
+    SimpleRNN(128, activation="tanh"),
+    BatchNormalization(),
+    Dropout(0.4),
+    Dense(64, activation='relu'),
+    BatchNormalization(),
+    Dropout(0.3),
+    Dense(32, activation='relu'),
+    BatchNormalization(),
+    Dropout(0.2),
+    Dense(1, activation='sigmoid')
+])
+
+
+
+Fifth
+
+
+LSTM
+First train
+
+epochs 100
+adam = tf.keras.optimizers.Adam(learning_rate=10e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-7)
+
+    model = Sequential([
+        Embedding(max_words, 128,input_length=max_len),
+        LSTM(128, activation="tanh", dropout=0.4),
+        Dense(64, activation='relu'),
+        Dropout(0.3),
+        Dense(32, activation='relu'),
+        Dropout(0.2),
+        Dense(1, activation='sigmoid')
+    ])
+
+SEcond
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-4,decay=10e-6,momentum = 0.6)
+
+    model = Sequential([
+        Embedding(max_words, 128,input_length=max_len),
+        LSTM(128, activation="tanh", dropout=0.4),
+        Dense(64, activation='relu'),
+        Dropout(0.3),
+        Dense(32, activation='relu'),
+        Dropout(0.2),
+        Dense(1, activation='sigmoid')
+    ])
+
+Third
+adam = tf.keras.optimizers.Adam(learning_rate=10e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-7)
+
+model = Sequential([
+    Embedding(max_words, 128, input_length=max_len),
+    LSTM(128, activation="tanh", dropout=0.4, kernel_regularizer=regularizers.l2(0.001)),
+    Dense(64, activation='relu', kernel_regularizer=regularizers.l2(0.001)),
+    Dropout(0.3),
+    Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.001)),
+    Dropout(0.2),
+    Dense(1, activation='sigmoid')
+])
+
+Fourth
+
+
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-4, decay=10e-6, momentum=0.6)
+
+model = Sequential([
+    Embedding(max_words, 128, input_length=max_len),
+    LSTM(128, activation="tanh", dropout=0.4),
+    BatchNormalization(),
+    Dense(64, activation='relu'),
+    Dropout(0.3),
+    BatchNormalization(),
+    Dense(32, activation='relu'),
+    Dropout(0.2),
+    BatchNormalization(),
+    Dense(1, activation='sigmoid')
+])
+Fifth
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-2, decay=10e-5, momentum=0.6)
+
+model = Sequential([
+    Embedding(max_words, 128, input_length=max_len),
+    LSTM(128, activation="tanh", dropout=0.4),
+    Dense(64, activation='relu'),
+    Dropout(0.3),
+    Dense(32, activation='relu'),
+    Dropout(0.2),
+    Dense(1, activation='sigmoid')
+])
+
+
+BLSTM
+
+opt = tf.keras.optimizers.legacy.SGD(learning_rate=10e-4,decay=10e-6,momentum = 0.6)
+with strategy.scope():
+    model = Sequential([
+        Embedding(max_words, 128,input_length=max_len),
+        Bidirectional(LSTM(128, activation='tanh', dropout=0.4)),
+        Dense(64, activation='relu'),
+        Dropout(0.3),
+        Dense(32, activation='relu'),
+        Dropout(0.2),
+        Dense(1, activation='sigmoid')
+    ])

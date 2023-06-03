@@ -1,0 +1,11 @@
+\selectlanguage *{greek}
+\contentsline {chapter}{\numberline {1}Introduction to the Project}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Brief Description of the Code}{4}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Results of PPO and A2C}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}PPO Algorithm}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Default CNNPolicy vs Custom CNNPolicy}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Default MlpPolicy vs Custom MlpPolicy}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}A2C Algorithm}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Default CNNPolicy vs Custom CNNPolicy}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Default Mlpolicy vs Custom MlpPolicy}{16}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}PPO vs A2C}{18}{section.2.3}%

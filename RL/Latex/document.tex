@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt,twoside]{report}
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{{Results/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[parfill]{parskip}
+%\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\filcenter}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}
+{0pt}{30pt}{20pt}
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Roboto}
+\newfontfamily{\greekfont}{Roboto}
+\newfontfamily{\greekfontsf}{Roboto}
+\usepackage{polyglossia}
+\setdefaultlanguage{greek}
+\setotherlanguage{english}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancypagestyle{plain}{}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[LO,RE]{Vasileios Asimakopoulos}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\figurename}{Fig.}
+\makeatletter 
+\renewcommand{\thesubfigure}{\@roman\c@subfigure}
+\makeatother
+\usepackage{listings}
+\lstset{breaklines}
+\usepackage{pythonhighlight}
+\usepackage{afterpage}
+\newcommand\blankpage{
+	\null
+	\thispagestyle{empty}
+	\addtocounter{page}{-1}
+	\newpage}
+%%%
+
+%\usepackage[sfdefault]{Roboto}	
+\usepackage{amsmath}
+\usepackage{unicode-math}
+%\setmathfont{Fira Math}
+%\setmathfont[range=it]{Roboto}
+%\setmathfont[range=\int]{Fira Mat.h}
+%\doublespacin
+
+\usepackage{animate}
+
+
+
+
+\begin{document}
+	
+	\include{cover1}
+	\pagenumbering{arabic}
+	\tableofcontents
+	\listoffigures
+	\lstlistoflistings
+	
+	\chapter{Introduction to the Project}
+	\input{chapters/Chapter 1}
+	\chapter{Results of PPO and A2C}
+	\label{chap:kef2}
+	\input{chapters/Chapter 2}
+	%\appendix
+	%\chapter{Code}
+	%\label{appendix:app}
+	%\input{chapters/appendix}
+	
+\end{document}

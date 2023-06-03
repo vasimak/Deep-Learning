@@ -1,0 +1,12 @@
+dropout2 = Dropout_Layer(0.2)
+dropout3 = Dropout_Layer(0.2)
+conv1 = Convolution_Layer((1, 28, 28), 3, 64)
+r=Reshape((64, 26, 26), (64 * 26 * 26, 1))
+dense1 = Layer_Dense(64 * 26* 26,128)
+activation1 = Activation_ReLU()
+activation2 = Activation_ReLU()
+softmax = Activation_Softmax()
+dense2=Layer_Dense(128,10)
+loss_function = Loss_CategoricalCrossentropy()
+optimizer = Optimizer_SGD(learning_rate=10e-5) 20k filename 50 epochs
+learning_rate=10e-5,decay=10e-6,momentum=0.8 40k filenames 100 epochs

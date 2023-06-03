@@ -1,0 +1,11 @@
+Epoch 0 took 682.53 seconds, training loss: 1.912, training accuracy: 0.304, test loss: 1.685, test accuracy: 0.407, optimizer: 8.333402778356486e-05
+Epoch 10 took 898.35 seconds, training loss: 1.620, training accuracy: 0.406, test loss: 1.603, test accuracy: 0.420, optimizer: 3.125009765655518e-05
+Epoch 20 took 872.42 seconds, training loss: 1.506, training accuracy: 0.467, test loss: 1.464, test accuracy: 0.496, optimizer: 1.923080621308887e-05
+Epoch 30 took 879.18 seconds, training loss: 1.434, training accuracy: 0.488, test loss: 1.436, test accuracy: 0.496, optimizer: 1.3888908179039137e-05
+Epoch 40 took 1407.63 seconds, training loss: 1.426, training accuracy: 0.489, test loss: 1.426, test accuracy: 0.498, optimizer: 1.0869577032148946e-05
+Epoch 50 took 1420.90 seconds, training loss: 1.418, training accuracy: 0.490, test loss: 1.433, test accuracy: 0.494, optimizer: 8.928579400517322e-06
+Epoch 60 took 1420.76 seconds, training loss: 1.419, training accuracy: 0.490, test loss: 1.435, test accuracy: 0.495, optimizer: 7.5757633149722075e-06
+Epoch 70 took 1479.39 seconds, training loss: 1.407, training accuracy: 0.494, test loss: 1.433, test accuracy: 0.497, optimizer: 6.578951696678748e-06
+Epoch 80 took 1450.36 seconds, training loss: 1.424, training accuracy: 0.487, test loss: 1.424, test accuracy: 0.496, optimizer: 5.813956868579575e-06
+Epoch 90 took 1459.82 seconds, training loss: 1.406, training accuracy: 0.494, test loss: 1.444, test accuracy: 0.494, optimizer: 5.208336046008356e-06
+Epoch 100 took 1442.41 seconds, training loss: 1.243, training accuracy: 0.493, test loss: 1.271, test accuracy: 0.495, optimizer: 4.716983357067621e-06

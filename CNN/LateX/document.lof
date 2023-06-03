@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Διάγραμμα loss, accuracy για την 1ή περίπτωση εκπαίδευσης του μοντέλου \relax }}{5}{figure.caption.5}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Πίνακας εποχών\relax }}{5}{figure.caption.6}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Διάγραμμα loss, accuracy για την 2ή περίπτωση εκπαίδευσης του μοντέλου με παραμέτρους : learning rate=10e-4, decay=10e-5, momentum=0.5 \relax }}{6}{figure.caption.7}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Πίνακας εποχών\relax }}{6}{figure.caption.8}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Διάγραμμα loss, accuracy για την 2ή περίπτωση εκπαίδευσης του μοντέλου με παραμέτρους : learning rate=10e-5, decay=10e-6, momentum=0.8\relax }}{7}{figure.caption.9}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Πίνακας εποχών\relax }}{7}{figure.caption.10}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Διάγραμμα loss, accuracy για την 3ή περίπτωση εκπαίδευσης του μοντέλου για 20k δεδομενα\relax }}{8}{figure.caption.11}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Διάγραμμα loss, accuracy για την 3ή περίπτωση εκπαίδευσης του μοντέλου για 10k δεδομένα\relax }}{8}{figure.caption.12}%
+\addvspace {10\p@ }
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Απεικόνιση αρχιτεκτονική CNN δικτύου\relax }}{10}{figure.caption.13}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Διάγραμμα loss, accuracy numpy CNN δικτύου\relax }}{11}{figure.caption.14}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Διάγραμμα accuracy tensorflow CNN-SGD δικτύου\relax }}{12}{figure.caption.15}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Διάγραμμα loss, accuracy numpy CNN δικτύου\relax }}{13}{figure.caption.16}%
+\setforeignlanguage {greek}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Διάγραμμα accuracy tensorflow CNN-lr δικτύου\relax }}{14}{figure.caption.17}%
+\addvspace {10\p@ }
